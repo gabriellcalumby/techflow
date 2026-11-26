@@ -1,0 +1,50 @@
+# ATA DE REPRIORIZAÇÃO DE ESCOPO — TECHFLOW CORE
+
+**Projeto:** TechFlow Core  
+**Etapa:** 10 — Negociação e Repriorização de Escopo  
+**Data:** 26/11/2026  
+**Responsável:** Desenvolvedor do projeto
+
+## 1. Objetivo
+
+Reavaliar o escopo inicial do TechFlow Core e definir novas funcionalidades que agreguem valor ao sistema, considerando o tempo disponível, a viabilidade técnica e as prioridades do projeto.
+
+## 2. Funcionalidades propostas
+
+Durante a revisão do projeto, foram propostas as seguintes melhorias:
+
+- Adicionar um campo de valor estimado em reais (BRL) às demandas.
+- Realizar a conversão automática do valor estimado de reais para dólares (USD), utilizando a cotação obtida por API.
+- Implementar um filtro para visualizar demandas conforme sua prioridade.
+- Melhorar as validações de dados e o tratamento de erros.
+
+## 3. Análise de viabilidade
+
+As funcionalidades propostas foram consideradas viáveis, pois o projeto já possui estrutura CRUD, integração com APIs externas, funções auxiliares e validações.
+
+A implementação será realizada utilizando Python e bibliotecas nativas, evitando dependências externas e respeitando as limitações do ambiente de desenvolvimento.
+
+## 4. Repriorização
+
+| Prioridade | Funcionalidade | Justificativa |
+|---|---|---|
+| Alta | Cadastro e gerenciamento de demandas | Funcionalidade principal do sistema |
+| Alta | Valor estimado em BRL | Permite estimar custos das demandas |
+| Alta | Conversão de BRL para USD | Agrega informação financeira |
+| Média | Filtro por prioridade | Facilita organização e consulta |
+| Alta | Tratamento de erros e validações | Garante estabilidade do sistema |
+| Alta | Testes e integração dos módulos | Necessário para entrega funcional |
+
+## 5. Decisões tomadas
+
+Foi decidido manter a arquitetura CLI e Python, sem alterar a estrutura principal do projeto.
+
+As novas funcionalidades serão incorporadas ao sistema de maneira gradual, priorizando o funcionamento das operações existentes, a segurança das entradas e a integração entre os módulos.
+
+## 6. Conclusão
+
+A repriorização busca aumentar a utilidade do TechFlow Core sem comprometer o cronograma de desenvolvimento. As melhorias propostas serão implementadas e testadas nas próximas etapas.
+
+**Status:** Escopo revisado e prioridades definidas.
+
+**Assinatura do responsável:** Gabriel Henrique Calumby Moura
