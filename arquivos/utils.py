@@ -69,3 +69,49 @@ def formatar_cep(cep):
         return None
 
     return numeros[:5] + "-" + numeros[5:]
+    
+def entrada_segura(mensagem):
+    """
+    Solicita uma entrada ao usuário sem deixar o programa
+    encerrar inesperadamente.
+    """
+    try:
+        return input(mensagem).strip()
+
+    except (EOFError, KeyboardInterrupt):
+        print("\nOperação cancelada pelo usuário.")
+        return None
+
+
+def validar_valor(valor):
+    """
+    Verifica se o valor informado é numérico e positivo.
+    """
+    try:
+        valor = float(valor.replace(",", "."))
+
+        if valor <= 0:
+            return None
+
+        return valor
+
+    except (ValueError, AttributeError):
+        return None
+
+
+def solicitar_valor(mensagem):
+    """
+    Solicita um valor monetário válido.
+    """
+    while True:
+        entrada = entrada_segura(mensagem)
+
+        if entrada is None:
+            return None
+
+        valor = validar_valor(entrada)
+
+        if valor is not None:
+            return valor
+
+        print("Valor inválido! Digite um número maior que zero.")
